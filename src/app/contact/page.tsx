@@ -23,11 +23,11 @@ const ContactPage = () => {
 			</header>
 			<section className="py-24">
 				<div className="max-w-5xl mx-auto px-2">
-					<h2 className="text-4xl text-center w-1/2 mx-auto mb-12">
+					<h2 className="text-3xl md:text-4xl text-center w-full md:w-1/2 mx-auto mb-12">
 						We love meeting new people and helping them
 					</h2>
-					<div className="grid grid-cols-3 gap-16">
-						<div className="col-span-1">
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-16">
+						<div className="col-span-1 mb-6 md:mb-0">
 							<div className="bg-light rounded-2xl py-12 px-4">
 								<div className="flex flex-col space-y-4">
 									<div className="flex items-center space-x-4">
@@ -62,7 +62,7 @@ const ContactPage = () => {
 								</div>
 							</div>
 						</div>
-						<div className="grid grid-cols-2 gap-4 col-span-2">
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-4 col-span-1 md:col-span-2">
 							<input
 								type="text"
 								placeholder="Name"
@@ -89,8 +89,8 @@ const ContactPage = () => {
 								name="content"
 								id="content"
 								placeholder="Say something..."
-								className="col-span-2 rounded border-b border-b-gray-600 focus:border-b-accentDark outline-none resize-y w-full p-1"></textarea>
-							<div className="flex justify-end col-span-2 mt-6">
+								className="col-span-1 md:col-span-2 rounded border-b border-b-gray-600 focus:border-b-accentDark outline-none resize-y w-full p-1"></textarea>
+							<div className="flex justify-end col-span-1 md:col-span-2 mt-6">
 								<button className="inline-flex group items-center space-x-2 bg-primary rounded-lg w-fit py-3 px-6">
 									<span className="text-white text-sm tracking-wider">
 										Send Now
@@ -102,7 +102,7 @@ const ContactPage = () => {
 					</div>
 				</div>
 			</section>
-			<section className="py-16">
+			<section className="py-16 px-2">
 				<div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-lg px-2">
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.6492854817957!2d-119.7519101884035!3d36.730983371482246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e53ec2b407f%3A0xc5701d733c109706!2s1121%20S%20Chance%20Ave%2C%20Fresno%2C%20CA%2093702%2C%20USA!5e0!3m2!1sen!2sng!4v1687513011950!5m2!1sen!2sng"

@@ -64,7 +64,7 @@ const PricingPage = () => {
 						</div>
 						<div className="flex items-center justify-stretch">
 							<span className="inline-block w-full h-[1px] bg-primary" />
-							<span className="inline-block w-full text-white text-sm bg-primary rounded-3xl py-2 px-4">
+							<span className="flex items-center justify-center whitespace-nowrap w-full text-white text-sm bg-primary rounded-3xl py-2 px-4">
 								Most Popular
 							</span>
 							<span className="inline-block w-full h-[1px] bg-primary" />

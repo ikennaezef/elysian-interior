@@ -71,7 +71,7 @@ const Navbar = () => {
 						<motion.div key={link.id} variants={menuItem}>
 							<button
 								onClick={() => navigate(link.href)}
-								className="text-white text-lg font-serif tracking-wider">
+								className="text-white text-xl font-serif tracking-wider">
 								{link.title}
 							</button>
 						</motion.div>

@@ -99,7 +99,7 @@ export const menuContainer = {
 		transition: {
 			type: "spring",
 			bounce: 0,
-			duration: 0.5,
+			duration: 0.6,
 			staggerChildren: 0.05,
 			staggerDirection: -1,
 			delay: 0.4,
@@ -113,5 +113,5 @@ export const menuItem = {
 		y: 0,
 		transition: { type: "spring", stiffness: 300, damping: 24 },
 	},
-	closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
+	closed: { opacity: 0, y: 20, transition: { duration: 0.4 } },
 };

@@ -28,7 +28,7 @@ const HomeHero = () => {
 					className="relative z-10 flex flex-col space-y-3 pt-16 md:pt-[6rem]">
 					<motion.h2
 						variants={heroChildVariant}
-						className="text-3xl md:text-6xl">
+						className="text-4xl md:text-6xl">
 						Let Your Home Be Unique
 					</motion.h2>
 					<motion.p

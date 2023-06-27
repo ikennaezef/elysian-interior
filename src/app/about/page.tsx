@@ -140,11 +140,11 @@ const AboutPage = () => {
 							<motion.div
 								variants={staggerChild}
 								key={person.id}
-								className="relative rounded-2xl cursor-pointer group h-[18rem] overflow-hidden">
+								className="relative rounded-2xl cursor-pointer group h-[20rem] md:h-[18rem] overflow-hidden">
 								<img
 									src={person.image}
 									alt="Elysia Team Member"
-									className="w-full h-full object-cover object-top"
+									className="w-full h-full object-cover object-center md:object-top"
 								/>
 								<div className="absolute top-0 left-0 z-10 scale-y-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all ease-in duration-200 bg-white w-full h-full text-center py-6 p-3">
 									<h4 className="text-xl mb-2">{person.name}</h4>
