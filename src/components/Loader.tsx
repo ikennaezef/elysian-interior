@@ -7,7 +7,7 @@ const containerVariant = {
 		x: "100%",
 		width: "100%",
 		originX: 1,
-		transition: { duration: 0.2, ease: "easeInOut" },
+		transition: { duration: 0.4, ease: "easeInOut" },
 		delayChildren: 0.2,
 	},
 	animate: {

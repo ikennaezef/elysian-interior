@@ -14,6 +14,9 @@ module.exports = {
 				secondary: "#4D5053",
 				light: "#F4F0EC",
 			},
+			fontFamily: {
+				serif: ["DM Serif Display", "serif"],
+			},
 		},
 	},
 	plugins: [],

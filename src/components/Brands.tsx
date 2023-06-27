@@ -11,9 +11,14 @@ const brands = [
 const Brands = () => {
 	return (
 		<section className="py-16">
-			<div className="flex items-center justify-center space-x-12 max-w-5xl mx-auto">
+			<div className="flex flex-wrap md:flex-nowrap items-center justify-center space-x-8 md:space-x-12 space-y-6 md:space-y-0 max-w-5xl mx-auto">
 				{brands.map((brand) => (
-					<img key={brand.id} src={brand.image} alt="Partner" className="" />
+					<img
+						key={brand.id}
+						src={brand.image}
+						alt="Partner"
+						className="w-[100px]"
+					/>
 				))}
 			</div>
 		</section>

@@ -1,7 +1,10 @@
+"use client";
+import React from "react";
 import { JoinUsSectiion } from "@/components/JoinUsSectiion";
 import Loader from "@/components/Loader";
-import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import { motion } from "framer-motion";
+import { staggerChild, staggerContainer } from "@/utils/motionVariants";
 
 const services = [
 	{
@@ -48,9 +51,16 @@ const ServicesPage = () => {
 				</div>
 			</header>
 			<section className="py-16">
-				<div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto px-2">
+				<motion.div
+					initial="initial"
+					whileInView="animate"
+					variants={staggerContainer}
+					className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-2">
 					{services.map((service) => (
-						<div className="flex flex-col items-center group rounded-lg border border-gray-200 hover:bg-light py-6 p-3">
+						<motion.div
+							variants={staggerChild}
+							key={service.id}
+							className="flex flex-col items-center group rounded-lg border border-gray-200 hover:bg-light py-6 p-3">
 							<h4 className="text-lg text-center mb-4">{service.title}</h4>
 							<p className="text-secondary text-center mb-6">
 								Kasd duo et clita ea et erat eirmod sit. Lorem ea ipsum
@@ -61,20 +71,19 @@ const ServicesPage = () => {
 								<span className="text-gray-600">Read More</span>
 								<BsArrowRight className="text-accentDark group-hover:translate-x-2 transition-transform" />
 							</button>
-						</div>
+						</motion.div>
 					))}
-				</div>
+				</motion.div>
 			</section>
-			<section className="py-8">
+			<section className="py-8 px-2">
 				<div className="bg-light rounded-3xl max-w-5xl mx-auto py-12 px-2">
-					<h2 className="text-4xl text-center mb-2">How We Work</h2>
-					<p className="text-secondary text-sm text-center w-1/2 mx-auto">
+					<h2 className="text-3xl md:text-4xl text-center mb-2">How We Work</h2>
+					<p className="text-secondary text-sm text-center w-full md:w-1/2 mx-auto">
 						Est dolore dolor sea aliquyam lorem, amet consetetur kasd et et
-						dolore, amet sit nonumy kasd at dolores. Labore aliquyam justo sit
-						ut aliquyam, vero sit diam magna dolore dolor.
+						dolore, amet sit nonumy kasd at dolores. Labore aliquyam justo.
 					</p>
 					<div className="mt-16">
-						<div className="grid grid-cols-2 items-center gap-8 px-12 mb-12">
+						<div className="flex flex-col md:grid md:grid-cols-2 items-center gap-8 px-2 md:px-12 mb-12">
 							<div className="overflow-hidden rounded-tr-[4rem] rounded-bl-[9rem] max-w-[20rem] mx-auto h-[20rem]">
 								<img
 									src="/details.jpg"
@@ -89,7 +98,7 @@ const ServicesPage = () => {
 										alt="Elysia icon"
 										className="w-[50px] object-cover"
 									/>
-									<h3 className="text-white text-8xl">01</h3>
+									<h3 className="text-white text-6xl md:text-8xl">01</h3>
 								</div>
 								<h4 className="text-2xl mb-2">Concept & Details</h4>
 								<p className="text-secondary">
@@ -98,7 +107,7 @@ const ServicesPage = () => {
 								</p>
 							</div>
 						</div>
-						<div className="grid grid-cols-2 items-center gap-8 px-12 mb-12">
+						<div className="flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-8 px-2 md:px-12 mb-12">
 							<div>
 								<div className="flex items-center justify-between mb-8">
 									<img
@@ -106,7 +115,7 @@ const ServicesPage = () => {
 										alt="Elysia icon"
 										className="w-[50px] object-cover"
 									/>
-									<h3 className="text-white text-8xl">02</h3>
+									<h3 className="text-white text-6xl md:text-8xl">02</h3>
 								</div>
 								<h4 className="text-2xl mb-2">Idea For Work</h4>
 								<p className="text-secondary">
@@ -122,7 +131,7 @@ const ServicesPage = () => {
 								/>
 							</div>
 						</div>
-						<div className="grid grid-cols-2 items-center gap-8 px-12 mb-12">
+						<div className="flex flex-col md:grid md:grid-cols-2 items-center gap-8 px-2 md:px-12 mb-12">
 							<div className="overflow-hidden rounded-tr-[4rem] rounded-bl-[9rem] max-w-[20rem] mx-auto h-[20rem]">
 								<img
 									src="/kitchen_2.jpg"
@@ -137,7 +146,7 @@ const ServicesPage = () => {
 										alt="Elysia icon"
 										className="w-[50px] object-cover"
 									/>
-									<h3 className="text-white text-8xl">03</h3>
+									<h3 className="text-white text-6xl md:text-8xl">03</h3>
 								</div>
 								<h4 className="text-2xl mb-2">Design</h4>
 								<p className="text-secondary">
@@ -146,7 +155,7 @@ const ServicesPage = () => {
 								</p>
 							</div>
 						</div>
-						<div className="grid grid-cols-2 items-center gap-8 px-12 mb-12">
+						<div className="flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-8 px-2 md:px-12 mb-12">
 							<div>
 								<div className="flex items-center justify-between mb-8">
 									<img
@@ -154,7 +163,7 @@ const ServicesPage = () => {
 										alt="Elysia icon"
 										className="w-[50px] object-cover"
 									/>
-									<h3 className="text-white text-8xl">04</h3>
+									<h3 className="text-white text-6xl md:text-8xl">04</h3>
 								</div>
 								<h4 className="text-2xl mb-2">Perfection</h4>
 								<p className="text-secondary">

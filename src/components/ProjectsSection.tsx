@@ -1,23 +1,40 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import { BiChevronRight } from "react-icons/bi";
+import { staggerChild, staggerContainer } from "@/utils/motionVariants";
 
 const ProjectsSection = () => {
 	return (
 		<section className="py-8">
 			<div className="max-w-5xl mx-auto px-2">
-				<h3 className="text-4xl text-center mb-4">Follow Our Projects</h3>
-				<p className="text-center text-sm max-w-xl mx-auto text-secondary mb-16">
+				<motion.h3
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 0.8, delay: 0.4, ease: "easeIn" }}
+					className="text-3xl md:text-4xl text-center mb-4">
+					Follow Our Projects
+				</motion.h3>
+				<motion.p
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 0.8, delay: 0.4, ease: "easeIn" }}
+					className="text-center text-sm max-w-xl mx-auto text-secondary mb-16">
 					Et dolor sit eirmod duo ipsum no voluptua. Clita sit diam tempor
 					nonumy tempor duo, magna at takimata labore kasd duo diam sit dolor
-					erat. Sit sit at amet magna.
-				</p>
-				<div className="grid grid-cols-2 gap-16">
-					<div>
+					erat.
+				</motion.p>
+				<motion.div
+					initial="initial"
+					whileInView="animate"
+					variants={staggerContainer}
+					className="grid grid-cols-1 md:grid-cols-2 gap-16">
+					<motion.div variants={staggerChild}>
 						<div className="rounded-tr-[3rem] max-h-[30rem] overflow-hidden">
 							<img
 								src="/kitchen.jpg"
 								alt="Elysia Project"
-								className="object-cover h-full w-full"
+								className="object-cover h-[18rem] md:h-full w-full"
 							/>
 						</div>
 						<div className="flex items-center justify-between py-4 pr-3">
@@ -29,13 +46,13 @@ const ProjectsSection = () => {
 								<BiChevronRight className="text-primary" size={20} />
 							</button>
 						</div>
-					</div>
-					<div>
+					</motion.div>
+					<motion.div variants={staggerChild}>
 						<div className="rounded-tl-[3rem] max-h-[30rem] overflow-hidden">
 							<img
 								src="/sitting.jpg"
 								alt="Elysia Project"
-								className="object-cover h-full w-full"
+								className="object-cover h-[18rem] md:h-full w-full"
 							/>
 						</div>
 						<div className="flex items-center justify-between py-4 pr-3">
@@ -47,13 +64,13 @@ const ProjectsSection = () => {
 								<BiChevronRight className="text-primary" size={20} />
 							</button>
 						</div>
-					</div>
-					<div>
+					</motion.div>
+					<motion.div variants={staggerChild}>
 						<div className="rounded-br-[3rem] max-h-[30rem] overflow-hidden">
 							<img
 								src="/living.jpg"
 								alt="Elysia Project"
-								className="object-cover h-full w-full"
+								className="object-cover h-[18rem] md:h-full w-full"
 							/>
 						</div>
 						<div className="flex items-center justify-between py-4 pr-3">
@@ -65,13 +82,13 @@ const ProjectsSection = () => {
 								<BiChevronRight className="text-primary" size={20} />
 							</button>
 						</div>
-					</div>
-					<div>
+					</motion.div>
+					<motion.div variants={staggerChild}>
 						<div className="rounded-bl-[3rem] max-h-[30rem] overflow-hidden">
 							<img
 								src="/room.jpg"
 								alt="Elysia Project"
-								className="object-cover pos h-full w-full"
+								className="object-cover h-[18rem] md:h-full w-full"
 							/>
 						</div>
 						<div className="flex items-center justify-between py-4 pr-3">
@@ -83,8 +100,8 @@ const ProjectsSection = () => {
 								<BiChevronRight className="text-primary" size={20} />
 							</button>
 						</div>
-					</div>
-				</div>
+					</motion.div>
+				</motion.div>
 			</div>
 		</section>
 	);

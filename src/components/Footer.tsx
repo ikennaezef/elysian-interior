@@ -6,11 +6,11 @@ import Link from "next/link";
 const Footer = () => {
 	return (
 		<footer className="pt-12">
-			<div className="grid grid-cols-5 max-w-5xl mx-auto px-2">
+			<div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-2 max-w-5xl mx-auto px-2">
 				<div className="col-span-2">
 					<div className="flex items-center space-x-2 mb-2">
 						<HiHome className="text-accent" size={30} />
-						<h1 className="text-3xl ">Elysian</h1>
+						<h1 className="text-2xl md:text-3xl">Elysian</h1>
 					</div>
 					<p className="text-secondary w-4/5 mb-8">
 						Your Vision. Our Expertise. Beautifully Realized.
@@ -73,15 +73,15 @@ const Footer = () => {
 						Bedroom
 					</button>
 				</div>
-				<div className="col-span-1 flex flex-col items-start space-y-4">
+				<div className="col-span-2 md:col-span-1 flex flex-col items-start space-y-4">
 					<h5 className="text-lg">Contact</h5>
-					<p className="text-secondary">
+					<p className="text-sm text-secondary">
 						123 Main Street Los Angeles, CA 90001
 					</p>
-					<button className="text-secondary hover:text-accentDark">
+					<button className="text-sm text-secondary hover:text-accentDark">
 						elysianinterior@yahoo.com
 					</button>
-					<p className="text-secondary">+1 563 - 8903</p>
+					<p className="text-sm text-secondary">+1 563 - 8903</p>
 				</div>
 			</div>
 			<div className="border-t border-t-gray-300 py-4 mt-8">

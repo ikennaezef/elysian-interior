@@ -12,15 +12,15 @@ const PricingPage = () => {
 					alt="Elysia Interior Decoration"
 					className="w-full h-[18rem] object-cover"
 				/>
-				<div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10 bg-white rounded-t-xl w-[20rem] py-8 px-5">
+				<div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10 bg-white rounded-t-xl w-full md:w-[20rem] py-8 px-5">
 					<h2 className="text-3xl text-center mb-2">Pricing & Plans</h2>
 					<p className="text-secondary text-sm text-center">
 						Magna clita no et aliquyam stet ipsum. Est dolores ipsum.
 					</p>
 				</div>
 			</header>
-			<section className="py-12">
-				<div className="grid grid-cols-3 gap-12 max-w-5xl mx-auto px-2">
+			<section className="py-12 px-4">
+				<div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto px-2">
 					<div className="rounded-xl bg-light py-12">
 						<div className="text-center px-2">
 							<h4 className="text-lg text-center mb-6">Design Advice</h4>
